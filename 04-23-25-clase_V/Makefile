@@ -1,12 +1,19 @@
+SOURCES := $(wildcard *.cpp)
+OBJECTS = $(SOURCES:.cpp=.o)
+
 fig.pdf: script.gp data.txt
 	gnuplot $<
 
-%.x : %.cpp
-	g++ $< -o $@
+%.o : %.cpp
+	g++ $< -c 
+
+
+sumupdown.x : $(OBJECTS)
+	g++ $^ -o $@
 
 data.txt : sumupdown.x
 	./$< > $@
 
 clean :
-	rm -f *.x a.ot *.txt *.pdf
+	rm -f *.x a.ot *.txt *.pdf *.o
 	ls

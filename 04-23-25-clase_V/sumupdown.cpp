@@ -1,26 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-typedef float REAL;
-
-REAL directo(int N);
-REAL inverso(int N);
-
-REAL directo(int N){
-    REAL term = 0.0;
-    for(int ii = 1; ii <= N; ii++){
-        term += 1.0 / ii;
-    }
-    return term;
-}
-
-REAL inverso(int N){
-    REAL term = 0.0;
-    for(int ii = N; ii >= 1; ii--){
-        term += 1.0 / ii;
-    }
-    return term;
-}
+#include "functions.h"
 
 int main(void){
     std::cout.precision(7);
