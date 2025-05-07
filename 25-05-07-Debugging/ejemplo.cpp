@@ -16,10 +16,10 @@ int main(int argc, char **argv)
   int idx = 2;
   std::cout << array[idx] << std::endl;
   idx = 10;
-  std::cout << array[idx] << std::endl; // compiles, but ...
+  //std::cout << array[idx] << std::endl; // compiles, but ...
 
   // free memory
-  //delete [] array;
+  delete [] array;
 
   return EXIT_SUCCESS;
 }
