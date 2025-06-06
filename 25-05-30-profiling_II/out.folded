@@ -1,0 +1,9 @@
+a.out;_start;[unknown];[unknown];[unknown] 1
+a.out;_start;__libc_start_main@@GLIBC_2.34;__libc_start_call_main;main 308729128
+a.out;_start;__libc_start_main@@GLIBC_2.34;__libc_start_call_main;main;func1 30996424485
+a.out;_start;__libc_start_main@@GLIBC_2.34;__libc_start_call_main;main;func1;new_func1 30098457368
+a.out;_start;__libc_start_main@@GLIBC_2.34;__libc_start_call_main;main;func2 30588783976
+a.out;_start;_dl_start 1
+a.out;_start;_dl_start;[unknown];[unknown];[unknown] 31452
+a.out;_start;_dl_start;[unknown];[unknown];[unknown];[unknown] 106
+a.out;_start;_dl_start;_dl_sysdep_start;init_cpu_features.constprop.0;handle_amd 5797116
